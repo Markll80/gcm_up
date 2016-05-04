@@ -75,7 +75,7 @@ public class CcsClient {
 
     /// new: some additional instance and class members
     private static CcsClient sInstance = null;
-    private String mApiKey = "AIzaSyC_oi5v-QwyHirz_xbDzwcdcAROWrZ-xwc";
+    private String mApiKey = "AIzaSyDWj9s413wIuOELDpw8SkQu7-yCBgmgVNI";
     private String mProjectId = null;
     private boolean mDebuggable = false;
 
@@ -436,7 +436,7 @@ public class CcsClient {
             try {
                 handleIncomingDataMessage(msg);
                 // Send ACK to CCS
-                String apiKey = "AIzaSyC_oi5v-QwyHirz_xbDzwcdcAROWrZ-xwc";
+                String apiKey = "AIzaSyDDmQgAayqPVa0g954ieLN7GVrcB5Uy4SQ";
                 //Content content = createContent(msg);
                 //Post2Gcm.post(apiKey, content);
                 String ack = createJsonAck(msg.getFrom(), msg.getMessageId());
@@ -460,10 +460,10 @@ public class CcsClient {
     }
 
     public static void main(String[] args) {
-        final String projectId = "813916479990";
+        final String projectId = "1060657651246";
         final String password = "";
         //final String toRegId = "APA91bGtjDTQ3SAb69VfzW6FaBy6Wq-5KqX9T1qu7LX-DKHu8FNpqzgaoZ8oR4OQ8fRmues4q3rW7FgyrSB19l4RiTiIPyHNHjGXy3VpbbxlmgVZEmrTeO7uKDg0NRNHvPNt9VK9K9Ol";
-        final String toRegId ="APA91bGY4dIfSQXSKtJWMURy2QpJl9yyivYezFDD03kURk0x8EaVj31zmxALgjmg0bVh9eoGCwc5BWNXQh0CFZ9inFk1BJR2WBPLT8MT9ZvXCgX7wRchLlC0GgfxclqIux3vOLHNDiRJ";
+        final String toRegId ="APA91bHxC0fBfubcmsH8FsW_1dVC86U8YOJe6LvfJJQJQO9FdXpry6dZHJ98Hlbad8qibUyPukhcaBq_eZ8lA3u-2ywV_5w_VlZjZ4UazDsfHUhLrt7czi6wwQfXaPrCC43r3_yH5wAU";
         //final String toRegId = "APA91bGNKqkUQsqv3-Yjh2f84U8Z9v4z6hQ1XUy2g9pDztwGcB28SITCZFBPKgUGVJOvu-oYUyt--fdKiEuxq45vJRZjPYrvYUXQOe9Q0xmBpwofNUTjVNitQW3A1D16rlN0xeoszsZa";
         CcsClient ccsClient = CcsClient.prepareClient(projectId, password, true);
 
@@ -487,7 +487,7 @@ public class CcsClient {
 
 
 
-    }
+        }
     }
    /* public static Content createContent(CcsMessage msg ) {
         Content c = new Content();
